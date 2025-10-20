@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  shadowshell:
+    build: .
+    container_name: shadowshell
+    ports:
+      - "4200:4200"
+    restart: unless-stopped
+    tty: true
